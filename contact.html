@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Twilight Haven - Contact</title>
+   <meta charset="utf-8">
+   <link href="styles/styles.css" rel="stylesheet">
+   <script src="scripts/java.js" defer></script>
+   <script src="scripts/zipCode.js" defer></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Visit Twilight Haven and reserve your stay today!">
+</head>
+<body>
+   <!-- Start div wrapper -->
+   <div id="wrapper">
+      <!-- Header element -->
+      <header>
+         <h1>Twilight Haven</h1>
+      </header>
+      <!-- Start navigation -->
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./rooms/sapphire.html">Sapphire Room</a></li>
+            <li><a href="./rooms/emerald.html">Emerald Room</a></li>
+            <li><a href="./events/weekend.html">Weekend Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="browser_security.html">Browser Security</a></li>
+         </ul>
+      </nav>
+      <!-- Main element -->
+      <main>
+         <h2>Want to reserve a room with us?</h2>
+         <p>Fill out the form below to start your reservation. All information is required.</p>
+
+         <!-- Reservation Form -->
+         <form method="post" action="https://webdevbasics.net/scripts/demo.php" id="form">
+            <label for="myName">Name:</label>
+            <input type="text" id="myName" name="myName" required>
+            <label for="myEmail">E-mail:</label>
+            <input type="email" id="myEmail" name="myEmail" required>
+            <label for="mydate">Date room is needed:</label>
+            <input type="date" id="mydate" name="mydate" required>
+            <label for="myComments">Comments:</label>
+            <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+            <section>
+               <fieldset id="addressFields">
+                  <label for="country">Country</label>
+                  <select name="country" id="country">
+                     <option value="us">United States</option>
+                     <option value="at">Austria</option>
+                     <option value="ca">Canada</option>
+                     <option value="ch">Switzerland</option>
+                     <option value="de">Germany</option>
+                     <option value="fr">France</option>
+                     <option value="gb">Great Britain</option>
+                     <option value="in">India</option>
+                     <option value="it">Italy</option>
+                     <option value="jp">Japan</option>
+                     <option value="mx">Mexico</option>
+                     <option value="nz">New Zealand</option>
+                     <option value="ru">Russia</option>
+                     <option value="es">Spain</option>
+                     <option value="se">Sweden</option>
+                     <option value="tr">Turkey</option>
+                     <option value="za">South Africa</option>
+                  </select>
+                  <label for="postalCode">Enter a Postal Code</label>
+                  <input type="text" name="postalCode" id="postalCode" autocomplete="off"/>
+                  <label for="place">Place</label>
+                  <input type="text" name="place" id="place" autocomplete="off" />
+                  <label for="region">Region</label>
+                  <input type="text" name="region" id="region" autocomplete="off" />
+               </fieldset>
+         </section>
+            <!-- Error message placeholder -->
+            <p id="errorMessages"></p>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+         </form><br><br>
+
+         <div>Our contact information:<br>
+            48123 Hwy One<br>
+            Big Sur, California 93920<br>
+            <!-- Phone number (mobile) -->
+            <a id="mobile" href="tel:1(888)555-5555">1(888)555-5555</a>
+            <!-- Phone number (desktop) -->
+            <span id="desktop">1(888)555-5555</span><br><br>
+         </div>
+         <p>You can contact us at anytime via phone call or email! Our email is linked at the bottom!</p>
+         <p>We hope to hear from you and see you soon!</p>
+      </main>
+      <!-- Footer Section -->
+      <footer>
+         Copyright © 2024 WebMaster
+         <a href="mailto:b0559217@amarillocollege.com">Britney Amaro</a>
+      </footer>
+   </div>
+</body>
+</html>
