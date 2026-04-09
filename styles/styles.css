@@ -21,7 +21,7 @@ background-color: #170266; /* Set background color*/
 /*Styles for the Header */
 header {
 	background-image: url(../images/stars.jpg); /* Set heading image */
-    background-repeat: no-repeat; /* Set no repeat heading */
+    background-repeat: repeat-x; /* Set no repeat heading */
     background-color: #051545; /* Set heading background color*/
 	height: 100px; /* setting heading background height*/
 	font-family: Georgia, "Times New Roman", serif; /* Setting heading font */
@@ -215,4 +215,77 @@ footer { background-color: #000000;
 		}
 		
 	}	
+}
+/* Costs Page Styling */
+
+article {
+    max-width: 700px;
+    margin: auto;
+    background-color: rgba(5,21,69,0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article h3 {
+    color: #d6c6ff;
+    margin-top: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+}
+/* Costs Page Layout */
+
+.cost-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left side form */
+article {
+    width: 60%;
+	position: relative;
+}
+
+/* Right side totals */
+.total-box {
+    width: 30%;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #000;
+    position: sticky;
+    top: 20px;
+}
+
+.total-box h2 {
+    color: #d6c6ff;
+    text-align: center;
+}
+
+.total-box p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .cost-layout {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .total-box {
+        width: 100%;
+    }
 }
