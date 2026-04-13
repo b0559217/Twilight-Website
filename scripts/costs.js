@@ -8,7 +8,8 @@ const HITT_Class = 15.00;
 const Sapphire_Room = 150.00;
 const Emerald_Room = 150.00;
 const Regular_Room = 100.00;
-const SALES_TAX = 0.07;
+const SALES_TAX = 0.07; 
+const Nights_Set = 0;
 
 document.getElementById("argentinian").onclick = calcTotal;
 document.getElementById("jazz").onclick = calcTotal;
@@ -21,6 +22,7 @@ document.getElementById("nights").onchange = calcTotal;
 document.getElementById("sapphire").onclick = calcTotal;
 document.getElementById("emerald").onclick = calcTotal;
 document.getElementById("regular").onclick = calcTotal;
+document.getElementById("nights").onchange = calcTotal;
 
 
 
@@ -37,12 +39,9 @@ function calcTotal() {
    let buyLunch = document.getElementById("lunch").checked;
    let buyYoga = document.getElementById("yoga").checked;
    let buyHITT = document.getElementById("hitt").checked;
-   let Nights = document.getElementById("nights").value;
+   let Nights = parseInt(document.getElementById("nights").value) || 0;
 
    cost += (buyArgentinian) ? Argentinian_Grill_Night : 0;  
-   cost += (buy_regular) ? Regular_Room : 0;
-   cost += (buy_sapphire) ? Sapphire_Room : 0;
-   cost += (buy_emerald) ? Emerald_Room: 0;
    cost += (buyJazz) ? Jazz_Club_Night : 0;
    cost += (buyMurder) ? Murder_Mystery_Night : 0;
    cost += (buyPhotography) ? Photography_Tour : 0;
