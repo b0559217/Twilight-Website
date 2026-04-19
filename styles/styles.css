@@ -296,7 +296,7 @@ article {
 }
 
 .calendar-table th, .calendar-table td {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 8px;
 }
 
@@ -307,6 +307,6 @@ article {
 
 .calendar-table td small {
     display: block;
-    color: #7c259a; 
+    color: white; 
     font-size: 0.8em;
 }
