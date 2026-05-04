@@ -158,8 +158,8 @@ footer { background-color: #000000;
 }
 /*Media Query for a medium screen*/
 @media (min-width: 600px) {
-	#wrapper {width: 80%;
-	}
+	/*#wrapper {width: 80%;
+	}*/
 	header {
 		padding-left: 0;
 		text-align: center;
@@ -309,4 +309,52 @@ article {
     display: block;
     color: white; 
     font-size: 0.8em;
+}
+
+/* css for merchandise */
+#store {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #051545;
+  padding: 20px;
+}
+
+.product {
+  background-color: #0b1b70;
+  border: 1px solid #222;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+main img {
+  float: none;
+  padding: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+#cart {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
 }

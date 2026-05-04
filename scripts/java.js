@@ -26,7 +26,7 @@ document.getElementById("errorMessages").textContent = "";
         const name = document.getElementById("myName").value.trim();
         const email = document.getElementById("myEmail").value.trim();
         const date = document.getElementById("mydate").value.trim();
-        comments = document.getElementById("myComments").value.trim();
+        const comments = document.getElementById("myComments").value.trim();
     }
 //Simple validation checks
         if (!name || !email || !date || !comments) {

@@ -1,0 +1,164 @@
+<!--Britney Amaro-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Twilight Haven</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles/styles.css" rel="stylesheet">
+    <script src="scripts/merchandise.js" defer></script>
+	<meta name="description" content="Shop with us and enjoy your experience with us today.">
+</head>
+<body>
+<!--Start div wrapper-->
+	<div id="wrapper">
+<!--header element-->
+	<header>
+      <h1>Twilight Haven
+		<p id="greeting"></p>
+	  </h1>
+	</header>
+	<!--start navigation-->
+	<nav>
+	<ul> 
+		<li><a href="index.html">Home</a></li>
+		<li><a href="./rooms/sapphire.html">Sapphire Room</a></li>
+		<li><a href="./rooms/emerald.html">Emerald Room</a></li>
+		<li><a href="./events/weekend.html">Weekend Events</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="costs.html">Costs</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+		<li><a href="browser_security.html">Browser Security</a></li>
+	</ul>
+	</nav>
+	<!--main element-->
+	<main>
+
+<!-- ================= STORE SECTION ================= -->
+<section id="store">
+
+<h2>Shop Our Gifts</h2>
+
+<div class="product">
+
+    <img src="images/candle.jpg" alt="Twilight Candle">
+    <h3>Twilight Candle</h3>
+    <p>Relaxing lavender candle for peaceful nights.</p>
+    <button onclick="addToCart('Candle', 15)">Add to Cart - $15</button>
+
+</div>
+
+<div class="product">
+
+    <img src="images/robe.jpg" alt="Plush Robe">
+    <h3>Plush Robe</h3>
+    <p>Soft luxury robe (sizes S-XL).</p>
+
+    <select id="robeSize">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">XL</option>
+    </select>
+
+    <button onclick="addRobe()">Add to Cart - $40</button>
+</div>
+
+<div class="product">
+
+    <img src="images/mug.jpg" alt="Coffee Mug">
+    <h3>Twilight Mug</h3>
+    <p>Cozy ceramic mug for warm drinks.</p>
+    <button onclick="addToCart('Mug', 12)">Add to Cart - $12</button>
+
+</div>
+
+<div class="product">
+
+    <img src="images/basket.jpg" alt="Spa Basket">
+    <h3>Spa Gift Basket</h3>
+    <p>Includes candles, bath salts, and oils.</p>
+    <button onclick="addToCart('Spa Basket', 55)">Add to Cart - $55</button>
+
+</div>
+
+<div class="product">
+
+    <img src="images/shirt.jpg" alt="T-Shirt">
+    <h3>Twilight T-Shirt</h3>
+    <p>Comfortable branded shirt.</p>
+
+    <select id="shirtSize">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">XL</option>
+    </select>
+
+    <button onclick="addShirt()">Add to Cart - $20</button>
+</div>
+</section>
+
+<!-- ================= CART SECTION ================= -->
+<section id="cart">
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<p id="cartTotal"></p>
+
+<button onclick="showCheckout()">Checkout</button>
+
+</section>
+
+<!-- ================= CHECKOUT SECTION ================= -->
+<section id="checkout" style="display:none;">
+
+<h2>Checkout</h2>
+
+<h3>Billing Info</h3>
+
+<form id="checkoutForm">
+
+<label>Name:</label>
+<input type="text" id="name">
+
+<label>Email:</label>
+<input type="email" id="email">
+
+<label>Phone:</label>
+<input type="text" id="phone">
+
+<label>Billing Address:</label>
+<input type="text" id="billing">
+
+<br><br>
+
+<input type="checkbox" onclick="copyAddress()"> Same as Shipping
+
+<label>Shipping Address:</label>
+<input type="text" id="shipping">
+
+<br><br>
+
+<button type="button" onclick="placeOrder()">Place Order</button>
+
+</form>
+
+<p id="error"></p>
+</section>
+</main>
+	<!--Footer Section-->
+	<footer>
+		Copyright&copy; 2024 WebMaster<br>
+		<a href="mailto:b0559217@amarillocollege.com">Britney Amaro</a>
+		<div>
+			<script>
+				document.write("This page was last modified on: " + document.lastModified)
+			</script>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
