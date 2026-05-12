@@ -33,6 +33,7 @@ header {
 }
 /* Styles for Headings tags*/
 h1 { 
+	color:#d6c6ff;
 	
 	font-size: 2.5em; /* setting font size*/
    /*  padding-left: 80px; setting left padding*/
@@ -76,6 +77,7 @@ nav a:hover {
 /*Styles for the Main Element*/
 main {
 	display: block;
+	width: auto;
 	padding: 0 0 2em 2em;
 	background-color: #051545;
 	overflow:auto;
@@ -95,43 +97,6 @@ img {
   width: 100%;
   height: auto;
 }
-		#gallery { position: relative; }
-		#figure { position: absolute;
-				 top: 16px; 
-				left: 800px;
-				 text-align: center;
-				 opacity: .25; 
-		}
-		#gallery ul { width: 700px; 
-					  display: flex; 
-					  float: left;
-					  padding: 10px;
-					  flex-direction: row;
-					  flex-wrap: wrap;
-		}
-		#gallery li { list-style-type:none;
-						display:inline;
-					  
-					  
-		}
-		#gallery img { border-style: none;
-						width: 300px;
-		}
-		#gallery a { color: #EAEAEA;
-					 text-decoration: none; 
-					 font-style: italic;
-		}
-		#gallery span { position: absolute; 
-						left: -1000px;
-						opacity: 0;
-						transition: opacity 3s ease-in-out; 
-		}
-		#gallery a:hover span { position: absolute;
-								top: 16px; 
-								left: 800px;
-								text-align: center; 
-								opacity: 1;
-		}
 #mobile {display: inline;}
 #desktop {display: none;}
 /*Style rules for Table Element*/
@@ -164,7 +129,6 @@ footer { background-color: #000000;
 		padding-left: 0;
 		text-align: center;
 	}
-	h1 { font-size: 3em; }
 	nav ul {
 		flex-flow: row nowrap;
 		justify-content: space-around;
@@ -343,6 +307,7 @@ article {
 main img {
   float: none;
   padding: 0;
+  width:fit-content;
 }
 
 img {
@@ -357,4 +322,117 @@ img {
   border-radius: 10px;
   margin: 20px auto;
   width: 80%;
+}
+
+      /* Style the map with a specific height and width */
+      #map {
+         height: 400px; /* How tall the map is */
+         width: 600px;  /* How wide the map is */
+         border: 2px solid #7c259a; /* Purple border to match nav */
+         margin: 20px auto; /* Center with space around */
+         background-color: #051545; /* Match main background */
+      }
+      /* Style the location data */
+      .location-data {
+         font-size: 18px;
+         color: #c0c0c0; /* Match wrapper text */
+         margin: 10px 0;
+         font-family: "Times New Roman", Arial, sans-serif;
+      }
+      .location-data label {
+         font-weight: bold;
+         color: #acacac; /* Match body text */
+         margin-right: 10px;
+      }
+      /* Style the security info */
+      .security-info {
+         max-width: 600px;
+         line-height: 1.5;
+         color: #c0c0c0;
+         padding: 0 20px;
+      }
+      /* Style the error message */
+      #error {
+         color: #acacac;
+         margin: 10px 0;
+         display: none;
+      }
+/*  JavaScript 7th Edition
+    Chapter 5
+    Chapter Case
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}/*
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+
+
+ol, ul {
+   list-style: none;
+}
+
+/* article styles */
+
+article {
+   width: 100%;
+   height: 800px;
+   margin: 0 auto;
+}
+
+/*article > h1 {
+   font-size: 3.8em;
+   text-align: center;
+   color: ivory;
+   text-shadow: 2px 2px 10px black;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   margin: 5px 0 20px 0;
+}
+*/
+
+article > p {
+   font-size: 1.5em;
+   line-height: 2;
+}
+
+article > ul {
+   list-style-type: disc;
+   font-size: 1.2em;
+   line-height: 2;
+   padding-left: 20px;
+   padding-bottom: 40px;
+   border-bottom: 3px solid gray;
 }

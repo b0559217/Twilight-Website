@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Learn about our location at Twilight Haven!">
+   <title>Twilight Haven - Maps</title>
+   <!-- Link to your existing stylesheet -->
+   <link href="styles/styles.css" rel="stylesheet">
+   <!-- Leaflet CSS for the map -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+   <!-- Leaflet JavaScript -->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <script src="scripts/mapscript.js"> </script>
+
+</head>
+<body>
+   <!-- Start div wrapper -->
+   <div id="wrapper">
+      <!-- Header element -->
+      <header>
+         <h1>Twilight Haven</h1>
+      </header>
+      <!-- Start navigation -->
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./rooms/sapphire.html">Sapphire Room</a></li>
+            <li><a href="./rooms/emerald.html">Emerald Room</a></li>
+            <li><a href="./events/weekend.html">Weekend Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         	<li><a href="costs.html">Costs</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="maps.html">Maps</a></li>
+         </ul>
+      </nav>
+      <!-- Main element -->
+      <main>
+         <h2>Map of Twilight Haven</h2>
+         <p>Located in the heart of the Juan Mountains near alpine scenery and 2–5 miles south/southwest of downtown.</p>
+         <p>Explore our location and weather on the map below:</p>
+         <!-- Div for the map, styled with CSS -->
+         <div id="map"></div>
+
+         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+         <script src="scripts/mapscript.js"> </script>
+         <!-- Elements to show latitude, longitude, and altitude -->
+         <div class="location-data">
+            <p><label>Latitude:</label> <span id="latitude">37.9375° N</span></p>
+            <p><label>Longitude:</label> <span id="longitude">-107.8123° W</span></p>
+         </div>
+         <!-- Error message if geolocation fails -->
+         <p id="error"></p>
+      </main>
+      <!-- Footer Section -->
+      <footer>
+         Copyright © 2024 WebMaster
+         <a href="mailto:b0559217@amarillocollege.com">Britney Amaro</a>
+      </footer>
+   </div>
+</body>
+</html
